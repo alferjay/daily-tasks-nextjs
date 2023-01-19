@@ -1,0 +1,23 @@
+.time {
+  font-size: 5rem;
+  font-weight: bolder;
+  margin: 0;
+  padding:0;
+  line-height: 1;
+}
+
+.play {
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+.stop_pause {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.edit {
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
