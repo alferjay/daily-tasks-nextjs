@@ -60,7 +60,7 @@ export default function TaskDetail({handleShow}) {
         </SwiperSlide>
         <SwiperSlide className="text-center d-flex align-items-center justify-content-center">
           <div className="row w-100 h-100">
-            <div className="col-lg-6 offset-lg-3 bg-warning bg-opacity-75 p-5 d-flex flex-column justify-content-between h-100">
+            <div className="col-lg-6 offset-lg-3 bg-success bg-opacity-50 p-5 d-flex flex-column justify-content-between h-100">
               <div className="d-flex align-items-center justify-content-between">
                 <div className="text-start">
                   <p className="mb-2">Minutes Elapsed</p>
@@ -106,7 +106,7 @@ export default function TaskDetail({handleShow}) {
 
         <SwiperSlide className="text-center d-flex align-items-center justify-content-center">
           <div className="row w-100 h-100">
-            <div className="col-lg-6 offset-lg-3 bg-warning bg-opacity-75 p-5 d-flex flex-column justify-content-between h-100">
+            <div className="col-lg-6 offset-lg-3 bg-danger bg-opacity-50 p-5 d-flex flex-column justify-content-between h-100">
               <div className="d-flex align-items-center justify-content-between">
                 <div className="text-start">
                   <p className="mb-2">Minutes Elapsed</p>
