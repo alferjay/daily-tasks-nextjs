@@ -9,6 +9,11 @@
 .play {
   font-size: 5rem;
   font-weight: bolder;
+  animation: transform 500ms ease-in-out;
+}
+
+.play:hover, .stop_pause:hover {
+  transform: scale(1.1);
 }
 
 .stop_pause {

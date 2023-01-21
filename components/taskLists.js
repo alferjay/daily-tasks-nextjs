@@ -1,4 +1,4 @@
-import React,{useContext} from "react";
+import React,{useContext, useState} from "react";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { BsStopwatch } from 'react-icons/bs'
@@ -9,8 +9,10 @@ import { GlobalStateContext, GlobalDispatchContext, ACTIONS } from "@/context/co
 export default function TaskLists() {
   const state = useContext(GlobalStateContext);
   const dispatch = useContext(GlobalDispatchContext);
-
+  const [activeTask, setActiveTask] = useState(0)
+  
   const swipeSlide = (index, id) => {
+    setActiveTask(index)
     dispatch({type: ACTIONS.SWIPE_SLIDE, payload:index})
     dispatch({type: ACTIONS.CURRENT_TASK_ID, payload:id})
   }
@@ -24,7 +26,7 @@ export default function TaskLists() {
             onClick={()=>swipeSlide(index, t.id)}
             role="button"
             style={{'backgroundColor': t.theme}}
-            className="list mb-4 border p-4 d-flex justify-content-between bg-opacity-75"
+            className={`list mb-4 border p-4 d-flex justify-content-between bg-opacity-75 ${activeTask == index ? styles.activeTask:''}`}
           >
             <div className='h4 m-0'>{t.name}</div>
 
